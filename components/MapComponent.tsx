@@ -94,7 +94,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
 
   return (
     <Map
-      mapId={process.env.NEXT_PUBLIC_GOOGLE_MAP_ID!}
+      mapId={import.meta.env.VITE_GOOGLE_MAP_ID!}
       defaultCenter={{ lat: 35.681236, lng: 139.767125 }}
       defaultZoom={5}
       gestureHandling={'greedy'}

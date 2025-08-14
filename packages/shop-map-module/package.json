@@ -1,0 +1,35 @@
+{
+  "name": "@miyazawanaotaka/shop-map-module",
+  "version": "1.0.0",
+  "description": "A reusable shop map component for React projects.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "map",
+    "google-maps"
+  ],
+  "author": "miyazawanaotaka",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "tsup": "^8.0.2",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@vis.gl/react-google-maps": "^1.5.4"
+  }
+}

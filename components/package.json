@@ -1,0 +1,43 @@
+{
+  "name": "@miyazawanaotaka/shop-map-module",
+  "version": "1.0.0",
+  "description": "A reusable shop map component for React projects.",
+  "homepage": "https://mugenfit.github.io/cnpowners-map",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:lib": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "map",
+    "google-maps"
+  ],
+  "author": "miyazawanaotaka",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "@vitejs/plugin-react": "^5.0.0",
+    "gh-pages": "^6.3.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5",
+    "vite": "^7.1.2"
+  },
+  "dependencies": {
+    "@vis.gl/react-google-maps": "^1.5.4"
+  }
+}
